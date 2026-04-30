@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechNova Core Solutions — Expert IT & Computer Services Mumbai</title>
+  <!-- SEO -->
+  <meta name="description" content="TechNova Core Solutions — Mumbai's trusted partner for industrial computing, computer repair, CCTV installation, printer services & 24/7 technical support. 13+ years, 500+ happy clients."/>
+  <meta name="keywords" content="computer repair Mumbai, CCTV installation Goregaon, laptop repair Goregaon, IT support Mumbai, industrial computer, printer repair Mumbai, technical support Mumbai"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="TechNova Core Solutions"/>
+  <link rel="canonical" href="https://technovacoresolutions.in/"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="TechNova Core Solutions — Expert IT & Computer Services Mumbai"/>
+  <meta property="og:description" content="13+ years of trusted technology services in Mumbai. Computer repair, CCTV, printers, 24/7 support. 500+ happy clients."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="en_IN"/>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="TechNova Core Solutions Mumbai"/>
+  <meta name="twitter:description" content="Expert IT & Computer Services in Mumbai — 13+ Years, 500+ Clients"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <style>
+    :root {
+      --white:      #FFFFFF;
+      --bg-grey:    #F5F5F7;
+      --bg-dark:    #000000;
+      --text-black: #1D1D1F;
+      --text-mid:   #424245;
+      --text-soft:  #6E6E73;
+      --text-muted: #86868B;
+      --blue:       #0071E3;
+      --blue-hover: #0077ED;
+      --green:      #30D158;
+      --border:     #D2D2D7;
+      --border-soft:#E8E8ED;
+      --radius-sm:  12px;
+      --radius-md:  18px;
+      --radius-lg:  28px;
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    [id]{scroll-margin-top:60px}
+    body{font-family:-apple-system,BlinkMacSystemFont,"DM Sans","Helvetica Neue",sans-serif;background:var(--white);color:var(--text-black);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    ::-webkit-scrollbar{width:6px}
+    ::-webkit-scrollbar-track{background:var(--bg-grey)}
+    ::-webkit-scrollbar-thumb{background:#C7C7CC;border-radius:3px}
+
+    /* ── NAVBAR ── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;background:rgba(255,255,255,0.82);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,0.08);display:flex;align-items:center;transition:background 0.3s}
+    nav.dark-nav{background:rgba(0,0,0,0.82);border-bottom:1px solid rgba(255,255,255,0.1)}
+    .nav-inner{max-width:1080px;margin:0 auto;padding:0 22px;width:100%;display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+    .nav-logo-icon{width:28px;height:28px;background:var(--text-black);border-radius:7px;display:flex;align-items:center;justify-content:center}
+    nav.dark-nav .nav-logo-icon{background:var(--white)}
+    .nav-logo-icon i{color:var(--white);font-size:13px}
+    nav.dark-nav .nav-logo-icon i{color:var(--text-black)}
+    .nav-logo-text{font-size:15px;font-weight:600;color:var(--text-black);letter-spacing:-0.2px}
+    nav.dark-nav .nav-logo-text{color:var(--white)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-size:13px;font-weight:600;color:var(--text-black);text-decoration:none;opacity:0.85;transition:opacity 0.2s}
+    nav.dark-nav .nav-links a{color:#F5F5F7}
+    .nav-links a:hover{opacity:1}
+    .nav-cta{background:var(--blue);color:#fff!important;opacity:1!important;padding:7px 16px;border-radius:980px;font-size:13px!important;font-weight:500!important;transition:background 0.2s!important}
+    .nav-cta:hover{background:var(--blue-hover)!important}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+    .hamburger span{display:block;width:22px;height:1.5px;background:var(--text-black);border-radius:2px;transition:all 0.3s}
+    nav.dark-nav .hamburger span{background:var(--white)}
+    .mobile-nav{display:none;position:fixed;top:52px;left:0;right:0;bottom:0;background:rgba(0,0,0,0.92);backdrop-filter:blur(20px);z-index:99;padding:36px 28px;flex-direction:column;gap:6px}
+    .mobile-nav.open{display:flex}
+    .mobile-nav a{color:#fff;font-size:22px;font-weight:500;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);transition:color 0.2s}
+    .mobile-nav a:hover{color:#86868B}
+    .mobile-nav .mob-cta{margin-top:24px;background:var(--blue);color:#fff!important;text-align:center;padding:16px!important;border-radius:var(--radius-sm);border-bottom:none!important;font-size:17px!important}
+
+    /* ── HERO ── */
+    .hero{min-height:100vh;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 22px 80px;position:relative;overflow:hidden}
+    .hero-bg-img{position:absolute;inset:0;background-image:url(https://image-url-converter-qa6z.arcada.app/uploads/upload_1.webp);background-size:cover;background-position:center;opacity:1;z-index:0;filter:brightness(0.9)}
+    .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,5,15,0.50) 0%,rgba(0,10,25,0.60) 50%,rgba(0,0,0,0.75) 100%);z-index:1}
+    .hero-noise{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");opacity:0.4;pointer-events:none}
+    .hero-badge{display:inline-flex;align-items:center;gap:9px;background:rgba(0,0,0,0.40);border:1px solid rgba(255,255,255,0.30);border-radius:980px;padding:10px 22px;color:#FFFFFF;font-size:17px;font-weight:500;margin-bottom:28px;position:relative;z-index:2;animation:fadeUp 0.8s ease both;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+    .hero-badge span.dot{width:6px;height:6px;background:var(--green);border-radius:50%;flex-shrink:0;box-shadow:0 0 6px var(--green);animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+    .hero h1{font-size:clamp(44px,8vw,96px);font-weight:700;color:#FFFFFF;letter-spacing:-0.03em;line-height:1.05;max-width:900px;margin:0 auto 22px;position:relative;z-index:2;animation:fadeUp 0.8s 0.1s ease both;text-shadow:0 2px 20px rgba(0,0,0,0.5)}
+    .hero h1 em{font-style:normal;background:linear-gradient(135deg,#fff 0%,#86868B 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-sub{font-size:clamp(17px,2.5vw,22px);color:#F0F0F5;font-weight:400;max-width:540px;margin:0 auto 40px;line-height:1.6;position:relative;z-index:2;animation:fadeUp 0.8s 0.2s ease both}
+    /* Typewriter */
+    .typewriter-wrap{position:relative;z-index:2;margin-bottom:18px;animation:fadeUp 0.8s 0.15s ease both}
+    .typewriter{font-size:clamp(20px,3vw,28px);color:#FFFFFF;font-weight:600;letter-spacing:-0.02em;display:inline-flex;align-items:center;gap:0}
+    .typewriter-text::after{content:'|';animation:blink 0.75s step-end infinite;margin-left:2px;color:rgba(255,214,10,0.6)}
+    @keyframes blink{50%{opacity:0}}
+    .hero-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;position:relative;z-index:2;animation:fadeUp 0.8s 0.3s ease both}
+    .btn-primary{background:var(--blue);color:#fff;font-size:17px;font-weight:500;padding:14px 28px;border-radius:980px;text-decoration:none;transition:background 0.2s,transform 0.15s;display:inline-flex;align-items:center;gap:8px}
+    .btn-primary:hover{background:var(--blue-hover);transform:scale(1.02)}
+    .btn-outline{background:rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.18);color:#F5F5F7;font-size:17px;font-weight:500;padding:14px 28px;border-radius:980px;text-decoration:none;transition:background 0.2s,transform 0.15s;display:inline-flex;align-items:center;gap:8px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+    .btn-outline:hover{background:rgba(0,0,0,0.60);transform:scale(1.02)}
+    .hero-cards{display:flex;gap:14px;margin-top:70px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2;animation:fadeUp 0.8s 0.5s ease both}
+    .hero-stat{background:rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-md);padding:20px 28px;text-align:center;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);min-width:130px}
+    .hero-stat .num{font-size:32px;font-weight:700;color:#F5F5F7;letter-spacing:-0.03em;line-height:1}
+    .hero-stat .num span{color:var(--blue)}
+    .hero-stat .label{font-size:12px;color:#C7C7CC;margin-top:5px}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+    /* ── BRAND LOGOS STRIP ── */
+    .brands-strip{background:var(--bg-grey);padding:28px 0;border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);overflow:hidden}
+    .brands-label{text-align:center;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px}
+    .brands-track-wrap{overflow:hidden;width:100%;position:relative}
+    .brands-track-wrap::before,.brands-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+    .brands-track-wrap::before{left:0;background:linear-gradient(to right,var(--bg-grey),transparent)}
+    .brands-track-wrap::after{right:0;background:linear-gradient(to left,var(--bg-grey),transparent)}
+    .brands-track{display:flex;gap:0;width:max-content;animation:scrollBrands 28s linear infinite}
+    .brands-track:hover{animation-play-state:paused}
+    @keyframes scrollBrands{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .brand-item{display:flex;align-items:center;justify-content:center;padding:0 36px;height:52px;min-width:120px}
+    .brand-item span{font-size:15px;font-weight:700;color:#C7C7CC;letter-spacing:-0.02em;transition:color 0.2s;white-space:nowrap}
+    .brand-item:hover span{color:var(--text-mid)}
+
+    /* ── SECTION COMMONS ── */
+    section{padding:100px 22px;scroll-margin-top:60px}
+    .section-inner{max-width:1080px;margin:0 auto}
+    .section-eyebrow{font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+    .section-title{font-size:clamp(32px,5vw,56px);font-weight:700;letter-spacing:-0.03em;color:var(--text-black);line-height:1.1;margin-bottom:16px}
+    .section-sub{font-size:18px;color:var(--text-soft);font-weight:400;line-height:1.65;max-width:560px}
+    .section-header{margin-bottom:64px}
+    .section-header.center{text-align:center}
+    .section-header.center .section-sub{margin:0 auto}
+
+    /* ── SECTION HEADER BG IMAGE ── */
+    .sh-img-wrap{position:relative;border-radius:var(--radius-lg);overflow:hidden;background-size:cover;background-position:center;background-repeat:no-repeat;margin-bottom:64px}
+    .sh-img-wrap::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.68) 100%)}
+    .sh-img-wrap.sh-grey::before{background:linear-gradient(135deg,rgba(245,245,247,0.84) 0%,rgba(245,245,247,0.70) 100%)}
+    .sh-img-wrap.sh-dark::before{background:linear-gradient(135deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.58) 100%)}
+    .sh-img-wrap .section-header{position:relative;z-index:1;margin-bottom:0;padding:64px 48px}
+    .sh-img-wrap .section-title{text-shadow:0 1px 3px rgba(255,255,255,0.6)}
+    .sh-img-wrap.sh-dark .section-eyebrow{color:#86868B}
+    .sh-img-wrap.sh-dark .section-title{color:#F5F5F7;text-shadow:0 1px 8px rgba(0,0,0,0.4)}
+    .sh-img-wrap.sh-dark .section-sub{color:#adadb0}
+    @media(max-width:640px){.sh-img-wrap .section-header{padding:44px 24px}}
+
+    /* ── SERVICES ── */
+    .services-section{background:var(--bg-grey)}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .svc-card{background:var(--white);border-radius:var(--radius-lg);padding:40px 36px;position:relative;overflow:hidden;transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.3s;cursor:default;background-size:cover;background-position:center}
+    .svc-card::before{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(5,10,20,0.78) 0%,rgba(0,20,50,0.88) 100%);z-index:0;border-radius:var(--radius-lg)}
+    .svc-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,0.22)}
+    .svc-card.featured{background-color:var(--text-black)}
+    .svc-card.featured::before{background:linear-gradient(160deg,rgba(0,5,15,0.82) 0%,rgba(0,30,70,0.92) 100%)}
+    .svc-card > *{position:relative;z-index:1}
+    .svc-card-badge{position:absolute;top:22px;right:22px;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:var(--blue);color:#fff;padding:4px 10px;border-radius:980px;z-index:2}
+    .svc-icon{width:54px;height:54px;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.18);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:28px;backdrop-filter:blur(8px)}
+    .svc-card.featured .svc-icon{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.12)}
+    .svc-icon i{font-size:22px;color:#fff}
+    .svc-card.featured .svc-icon i{color:#F5F5F7}
+    .svc-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(100,180,255,0.9);margin-bottom:10px}
+    .svc-card.featured .svc-eyebrow{color:rgba(100,180,255,0.75)}
+    .svc-title{font-size:22px;font-weight:700;letter-spacing:-0.02em;line-height:1.2;color:#F5F5F7;margin-bottom:12px}
+    .svc-card.featured .svc-title{color:#F5F5F7}
+    .svc-desc{font-size:15px;color:rgba(220,230,245,0.75);line-height:1.6;margin-bottom:26px}
+    .svc-card.featured .svc-desc{color:rgba(200,215,235,0.65)}
+    .svc-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:30px}
+    .svc-list li{display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(210,225,245,0.85)}
+    .svc-card.featured .svc-list li{color:rgba(200,215,235,0.7)}
+    .svc-list li::before{content:'';width:16px;height:16px;flex-shrink:0;background:rgba(255,255,255,0.07);border-radius:50%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M13 4L6.5 11 3 7.5' stroke='%230071E3' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");background-size:14px;background-position:center;background-repeat:no-repeat}
+    .svc-card.featured .svc-list li::before{background-color:rgba(255,255,255,0.06)}
+    .svc-link{display:inline-flex;align-items:center;gap:5px;font-size:15px;font-weight:500;color:#60b0ff;text-decoration:none;transition:gap 0.2s}
+    .svc-link:hover{gap:9px}
+
+    /* ── STATS with counter ── */
+    .stats-section{background:var(--text-black);padding:80px 22px}
+    .stats-grid{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.08);border-radius:var(--radius-lg);overflow:hidden}
+    .stat-item{background:#0A0A0A;padding:52px 32px;text-align:center}
+    .stat-item:first-child{border-radius:var(--radius-lg) 0 0 var(--radius-lg)}
+    .stat-item:last-child{border-radius:0 var(--radius-lg) var(--radius-lg) 0}
+    .stat-num{font-size:52px;font-weight:700;letter-spacing:-0.04em;color:#F5F5F7;line-height:1}
+    .stat-num span{color:var(--blue)}
+    .stat-label{font-size:14px;color:#636366;margin-top:8px}
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-section{background:var(--white)}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .testi-card{background:var(--bg-grey);border-radius:var(--radius-lg);padding:32px;position:relative;transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.3s}
+    .testi-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,0.09)}
+    .testi-card.featured-t{background:var(--text-black)}
+    .testi-stars{display:flex;gap:3px;margin-bottom:16px}
+    .testi-stars i{font-size:13px;color:#FFD60A}
+    .testi-quote{font-size:15px;color:var(--text-mid);line-height:1.7;margin-bottom:22px;position:relative}
+    .testi-card.featured-t .testi-quote{color:#86868B}
+
+    .testi-quote::before{content:'\201C';font-size:48px;color:var(--blue);opacity:0.2;line-height:0;vertical-align:-22px;margin-right:4px;font-family:Georgia,serif}
+    .testi-author{display:flex;align-items:center;gap:12px}
+    .testi-avatar{width:42px;height:42px;border-radius:50%;background:var(--text-black);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;font-weight:700;color:#F5F5F7}
+    .testi-card.featured-t .testi-avatar{background:rgba(255,255,255,0.1);color:#F5F5F7}
+    .testi-name{font-size:14px;font-weight:600;color:var(--text-black)}
+    .testi-card.featured-t .testi-name{color:#F5F5F7}
+    .testi-loc{font-size:12px;color:var(--text-muted);margin-top:1px}
+    .testi-card.featured-t .testi-loc{color:#636366}
+    .testi-badge{position:absolute;top:22px;right:22px;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--blue);background:rgba(0,113,227,0.1);padding:4px 10px;border-radius:980px}
+
+    /* ── ABOUT ── */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .about-visual{position:relative}
+    .about-visual-main{
+      background:url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80') center center / cover no-repeat;
+      border-radius:var(--radius-lg);aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;position:relative;overflow:hidden
+    }
+    .about-visual-main::before{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(0,0,0,0.55) 0%,rgba(0,40,80,0.72) 100%);border-radius:var(--radius-lg)}
+    .about-avatar{width:100px;height:100px;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;z-index:1;backdrop-filter:blur(8px)}
+    .about-avatar i{font-size:42px;color:#fff}
+    .about-visual-main h3{font-size:20px;font-weight:700;color:#fff;position:relative;z-index:1}
+    .about-visual-main p{font-size:14px;color:rgba(255,255,255,0.75);position:relative;z-index:1}
+    .about-badge-1,.about-badge-2{position:absolute;background:var(--white);border-radius:var(--radius-sm);padding:14px 20px;box-shadow:0 8px 32px rgba(0,0,0,0.12);display:flex;align-items:center;gap:12px}
+    .about-badge-1{bottom:28px;left:-28px}
+    .about-badge-2{top:36px;right:-28px}
+    .badge-icon{width:40px;height:40px;background:var(--text-black);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .badge-icon i{color:#F5F5F7;font-size:16px}
+    .badge-text .bnum{font-size:20px;font-weight:700;color:var(--text-black);line-height:1}
+    .badge-text .blabel{font-size:12px;color:var(--text-soft);margin-top:2px}
+    .about-content p{font-size:17px;color:var(--text-soft);line-height:1.75;margin-bottom:18px}
+    .about-tags{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:32px}
+    .about-tag{display:flex;align-items:center;gap:10px;background:var(--bg-grey);border-radius:var(--radius-sm);padding:14px 16px;font-size:14px;font-weight:500;color:var(--text-mid)}
+    .about-tag i{color:var(--blue);font-size:14px}
+
+    /* ── WHY US ── */
+    .whyus-section{background:var(--bg-grey)}
+    .whyus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .whyus-card{background:var(--white);border-radius:var(--radius-md);padding:32px 28px;transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.3s}
+    .whyus-card:hover{transform:translateY(-5px);box-shadow:0 16px 48px rgba(0,0,0,0.08)}
+    .whyus-icon{width:48px;height:48px;background:var(--bg-grey);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+    .whyus-icon i{font-size:19px;color:var(--text-black)}
+    .whyus-card h3{font-size:18px;font-weight:700;letter-spacing:-0.02em;color:var(--text-black);margin-bottom:10px}
+    .whyus-card p{font-size:14px;color:var(--text-soft);line-height:1.65}
+
+    /* ── FAQ ── */
+    .faq-section{background:var(--white)}
+    .faq-list{max-width:740px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+    .faq-item{background:var(--bg-grey);border-radius:var(--radius-md);overflow:hidden;border:1.5px solid transparent;transition:border-color 0.2s}
+    .faq-item.open{border-color:rgba(0,113,227,0.2)}
+    .faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;user-select:none;gap:16px}
+    .faq-q span{font-size:16px;font-weight:600;color:var(--text-black);line-height:1.4}
+    .faq-item.open .faq-q span{color:var(--blue)}
+    .faq-icon{width:28px;height:28px;flex-shrink:0;background:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.08);transition:transform 0.3s,background 0.2s}
+    .faq-item.open .faq-icon{transform:rotate(45deg);background:var(--blue)}
+    .faq-icon i{font-size:12px;color:var(--text-mid);transition:color 0.2s}
+    .faq-item.open .faq-icon i{color:#fff}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1),padding 0.3s}
+    .faq-item.open .faq-a{max-height:200px;padding-bottom:20px}
+    .faq-a p{padding:0 24px;font-size:15px;color:var(--text-soft);line-height:1.7}
+
+    /* ── CTA BANNER ── */
+    .cta-section{background:var(--text-black);padding:100px 22px}
+    .cta-inner{max-width:760px;margin:0 auto;text-align:center}
+    .cta-inner h2{font-size:clamp(34px,5vw,56px);font-weight:700;letter-spacing:-0.03em;color:#F5F5F7;line-height:1.1;margin-bottom:18px}
+    .cta-inner p{font-size:18px;color:#86868B;margin-bottom:40px;line-height:1.65}
+    .cta-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+    /* ── YOUTUBE ── */
+    .yt-section{background:var(--bg-grey)}
+    .yt-embed{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,0.12);aspect-ratio:16/7}
+    .yt-embed iframe{width:100%;height:100%;display:block}
+
+    /* ── CONTACT ── */
+    .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
+    .contact-info-card{background:var(--bg-grey);border-radius:var(--radius-lg);padding:40px;display:flex;flex-direction:column;gap:28px}
+    .ci-row{display:flex;align-items:flex-start;gap:18px}
+    .ci-icon{width:44px;height:44px;flex-shrink:0;background:var(--text-black);border-radius:12px;display:flex;align-items:center;justify-content:center}
+    .ci-icon i{font-size:16px;color:#F5F5F7}
+    .ci-label{font-size:12px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--text-muted);margin-bottom:5px}
+    .ci-value{font-size:15px;color:var(--text-mid);line-height:1.6}
+    .ci-value a{color:var(--blue);text-decoration:none}
+    .ci-value a:hover{text-decoration:underline}
+    .hours-card{background:var(--text-black);border-radius:var(--radius-md);padding:28px 32px;margin-top:-10px}
+    .hours-card h4{font-size:15px;font-weight:600;color:#F5F5F7;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+    .hours-card h4 i{color:#86868B}
+    .hours-row{display:flex;justify-content:space-between;font-size:14px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .hours-row:last-of-type{border-bottom:none}
+    .hours-row .day{color:#86868B}
+    .hours-row .time{color:#F5F5F7;font-weight:500}
+    .hours-row .time.blue{color:var(--blue)}
+    .hours-note{margin-top:16px;padding:12px 16px;background:rgba(0,113,227,0.08);border-radius:10px;border-left:2px solid var(--blue);font-size:13px;color:#86868B;line-height:1.5}
+
+    /* ── CONTACT FORM (animated) ── */
+    .contact-form-wrap{background:var(--white);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:40px}
+    .contact-form-wrap h3{font-size:24px;font-weight:700;letter-spacing:-0.02em;color:var(--text-black);margin-bottom:28px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .form-group{display:flex;flex-direction:column;margin-bottom:16px;opacity:0;transform:translateY(16px);transition:opacity 0.45s ease,transform 0.45s ease}
+    .form-group.form-visible{opacity:1;transform:translateY(0)}
+    .form-group.floating{position:relative}
+    .form-group.floating label{position:absolute;top:14px;left:16px;font-size:15px;font-weight:400;color:var(--text-muted);pointer-events:none;transform-origin:left top;transition:transform 0.22s cubic-bezier(0.4,0,0.2,1),color 0.22s ease,font-size 0.22s ease;background:transparent;padding:0 3px}
+    .form-group.floating input:focus+label,.form-group.floating input:not(:placeholder-shown)+label,.form-group.floating textarea:focus+label,.form-group.floating textarea:not(:placeholder-shown)+label{transform:translateY(-22px) scale(0.78);color:var(--blue);background:var(--white);font-weight:500}
+    .form-group.floating input,.form-group.floating textarea{padding-top:18px;padding-bottom:10px}
+    .form-group>label:not(.svc-option-label){font-size:13px;font-weight:500;color:var(--text-mid);margin-bottom:7px}
+    .form-group input,.form-group textarea{background:var(--bg-grey);border:1.5px solid transparent;border-radius:var(--radius-sm);padding:13px 16px;font-size:15px;color:var(--text-black);font-family:inherit;outline:none;transition:border-color 0.2s,background 0.2s,box-shadow 0.2s;width:100%}
+    .form-group input:focus,.form-group textarea:focus{background:var(--white);border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,0.10)}
+    .form-group textarea{resize:vertical;min-height:110px}
+
+    /* Service options */
+    .svc-label{font-size:13px;font-weight:500;color:var(--text-mid);margin-bottom:10px}
+    .svc-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .svc-opt{position:relative;display:flex;align-items:center;gap:11px;background:var(--bg-grey);border:1.5px solid transparent;border-radius:var(--radius-sm);padding:13px 15px;cursor:pointer;font-family:inherit;text-align:left;transition:background 0.2s,border-color 0.2s,transform 0.18s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.2s;overflow:hidden}
+    .svc-opt::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,113,227,0.06),rgba(0,113,227,0));opacity:0;transition:opacity 0.2s}
+    .svc-opt:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.08);background:#EBEBF0}
+    .svc-opt:hover::before{opacity:1}
+    .svc-opt.selected{background:rgba(0,113,227,0.06);border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,0.10);transform:translateY(-2px)}
+    .svc-opt.selected::before{opacity:1}
+    .svc-opt-icon{width:36px;height:36px;flex-shrink:0;background:var(--white);border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.07);transition:background 0.2s,box-shadow 0.2s}
+    .svc-opt.selected .svc-opt-icon{background:var(--blue);box-shadow:0 4px 12px rgba(0,113,227,0.30)}
+    .svc-opt-icon i{font-size:15px;color:var(--text-soft);transition:color 0.2s}
+    .svc-opt.selected .svc-opt-icon i{color:#fff}
+    .svc-opt-text{font-size:13.5px;font-weight:500;color:var(--text-mid);line-height:1.3}
+    .svc-opt.selected .svc-opt-text{color:var(--blue)}
+    .svc-opt .ripple{position:absolute;border-radius:50%;background:rgba(0,113,227,0.15);transform:scale(0);animation:rippleAnim 0.5s linear;pointer-events:none}
+    @keyframes rippleAnim{to{transform:scale(4);opacity:0}}
+    .svc-opt-check{margin-left:auto;flex-shrink:0;width:18px;height:18px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(0);transition:opacity 0.2s,transform 0.25s cubic-bezier(0.34,1.56,0.64,1)}
+    .svc-opt.selected .svc-opt-check{opacity:1;transform:scale(1)}
+    .svc-opt-check i{font-size:9px;color:#fff}
+
+    /* Submit button */
+    .btn-submit{width:100%;padding:16px;background:var(--blue);color:#fff;font-size:16px;font-weight:600;border:none;border-radius:var(--radius-sm);cursor:pointer;font-family:inherit;transition:background 0.2s,transform 0.15s,box-shadow 0.2s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:6px;position:relative;overflow:hidden}
+    .btn-submit:hover:not(:disabled){background:var(--blue-hover);transform:scale(1.01);box-shadow:0 8px 24px rgba(0,113,227,0.30)}
+    .btn-submit:active:not(:disabled){transform:scale(0.99)}
+    .btn-submit:disabled{cursor:not-allowed;opacity:0.8}
+    .btn-submit.loading{background:#005bb5}
+    .btn-submit.success{background:var(--green)}
+    .btn-submit .btn-default,.btn-submit .btn-loading,.btn-submit .btn-success{transition:opacity 0.2s,transform 0.2s}
+    .btn-submit .btn-loading,.btn-submit .btn-success{position:absolute}
+    .btn-submit:not(.loading):not(.success) .btn-loading{opacity:0;transform:scale(0.7)}
+    .btn-submit:not(.loading):not(.success) .btn-success{opacity:0;transform:scale(0.7)}
+    .btn-submit.loading .btn-default{opacity:0;transform:scale(0.7)}
+    .btn-submit.loading .btn-loading{opacity:1;transform:scale(1)}
+    .btn-submit.loading .btn-success{opacity:0}
+    .btn-submit.success .btn-default,.btn-submit.success .btn-loading{opacity:0;transform:scale(0.7)}
+    .btn-submit.success .btn-success{opacity:1;transform:scale(1)}
+    .spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .field-error{font-size:12px;color:#FF453A;margin-top:5px;display:none;align-items:center;gap:4px}
+    .field-error.show{display:flex}
+    .form-group.has-error input,.form-group.has-error textarea{border-color:#FF453A!important;background:rgba(255,69,58,0.04)!important}
+    @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+    .shake{animation:shake 0.4s ease}
+
+    /* Map */
+    .map-wrap{margin-top:60px;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-soft);box-shadow:0 8px 32px rgba(0,0,0,0.06)}
+    .map-wrap iframe{display:block;width:100%;height:380px;border:none}
+
+    /* ── FOOTER ── */
+    footer{background:var(--text-black);padding:64px 22px 32px;border-top:1px solid rgba(255,255,255,0.06)}
+    .footer-inner{max-width:1080px;margin:0 auto}
+    .footer-top{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:60px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.08)}
+    .footer-brand .logo-row{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+    .footer-brand .logo-icon{width:32px;height:32px;background:var(--white);border-radius:9px;display:flex;align-items:center;justify-content:center}
+    .footer-brand .logo-icon i{font-size:15px;color:var(--text-black)}
+    .footer-brand .logo-name{font-size:16px;font-weight:700;color:#F5F5F7}
+    .footer-brand p{font-size:14px;color:#636366;line-height:1.7;max-width:320px;margin-bottom:24px}
+    .footer-socials{display:flex;gap:10px}
+    .footer-socials a{width:38px;height:38px;background:rgba(255,255,255,0.06);border-radius:10px;display:flex;align-items:center;justify-content:center;transition:background 0.2s;text-decoration:none}
+    .footer-socials a:hover{background:rgba(255,255,255,0.12)}
+    .footer-socials a i{font-size:15px}
+    .footer-col h4{font-size:13px;font-weight:600;color:#F5F5F7;margin-bottom:18px;letter-spacing:0.02em}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+    .footer-col ul li a{font-size:14px;color:#636366;text-decoration:none;transition:color 0.2s}
+    .footer-col ul li a:hover{color:#86868B}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;flex-wrap:wrap;gap:12px}
+    .footer-bottom p{font-size:13px;color:#48484A}
+
+    /* ── ENHANCED WHATSAPP FAB ── */
+    .wa-fab-wrap{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+    .wa-tooltip{background:var(--text-black);color:#fff;font-size:13px;font-weight:500;padding:8px 14px;border-radius:980px;white-space:nowrap;opacity:0;transform:translateX(10px);transition:opacity 0.2s,transform 0.2s;pointer-events:none;box-shadow:0 4px 16px rgba(0,0,0,0.2)}
+    .wa-fab-wrap:hover .wa-tooltip{opacity:1;transform:translateX(0)}
+    .whatsapp-fab{width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,0.35);text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;position:relative}
+    .whatsapp-fab::before{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(37,211,102,0.3);animation:waPulse 2s ease-out infinite}
+    @keyframes waPulse{0%{transform:scale(1);opacity:0.7}100%{transform:scale(1.5);opacity:0}}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 12px 32px rgba(37,211,102,0.45)}
+    .whatsapp-fab i{font-size:26px;color:#fff}
+
+    /* ── SOCIAL PROOF TOAST ── */
+    .sp-toast{position:fixed;bottom:100px;left:24px;z-index:190;background:var(--white);border:1px solid var(--border-soft);border-radius:var(--radius-md);padding:14px 18px;box-shadow:0 12px 40px rgba(0,0,0,0.13);display:flex;align-items:center;gap:12px;max-width:300px;transform:translateX(-120%);transition:transform 0.45s cubic-bezier(0.34,1.56,0.64,1);pointer-events:none}
+    .sp-toast.show{transform:translateX(0)}
+    .sp-avatar{width:36px;height:36px;border-radius:50%;background:var(--bg-grey);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;font-weight:700;color:var(--text-mid)}
+    .sp-text{font-size:13px;color:var(--text-mid);line-height:1.45}
+    .sp-text strong{color:var(--text-black);display:block}
+    .sp-time{font-size:11px;color:var(--text-muted);margin-top:2px}
+
+    /* ── SCROLL REVEAL ── */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-d1{transition-delay:0.05s}
+    .reveal-d2{transition-delay:0.12s}
+    .reveal-d3{transition-delay:0.19s}
+    .reveal-d4{transition-delay:0.26s}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:960px){
+      .services-grid{grid-template-columns:1fr 1fr}
+      .whyus-grid{grid-template-columns:1fr 1fr}
+      .stats-grid{grid-template-columns:1fr 1fr}
+      .stat-item:first-child{border-radius:var(--radius-lg) var(--radius-lg) 0 0}
+      .stat-item:nth-child(2){border-radius:0}
+      .stat-item:nth-child(3){border-radius:0}
+      .stat-item:last-child{border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+      .about-grid{grid-template-columns:1fr;gap:40px}
+      .about-visual{max-width:420px;margin:0 auto}
+      .contact-grid{grid-template-columns:1fr}
+      .footer-top{grid-template-columns:1fr 1fr;gap:40px}
+      .testi-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:640px){
+      section{padding:72px 18px}
+      .services-grid{grid-template-columns:1fr}
+      .whyus-grid{grid-template-columns:1fr}
+      .stats-grid{grid-template-columns:1fr 1fr}
+      .stat-item:first-child{border-radius:0}
+      .stat-item:last-child{border-radius:0}
+      .stats-grid{border-radius:var(--radius-md)}
+      .form-row{grid-template-columns:1fr}
+      .footer-top{grid-template-columns:1fr;gap:32px}
+      .footer-bottom{flex-direction:column;text-align:center}
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .hero h1{font-size:38px}
+      .hero-cards{gap:10px}
+      .hero-stat{min-width:110px;padding:16px 18px}
+      .about-badge-1{left:0;bottom:-20px}
+      .about-badge-2{right:0;top:-20px}
+      .testi-grid{grid-template-columns:1fr}
+      .sp-toast{left:12px;right:12px;max-width:unset}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="https://i.postimg.cc/hGdsdd9V/2026.png"
+           alt="TechNova Core Solutions Logo"
+           style="height:38px;width:auto;object-fit:contain;">
+      <span class="nav-logo-text">TechNova Core Solution</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="tel:+919136149309" class="nav-cta">
+        <i class="fas fa-phone"></i> Call Now
+      </a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile menu">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#testimonials">Reviews</a>
+  <a href="#about">About</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:+919136149309" class="mob-cta"><i class="fas fa-phone" aria-hidden="true"></i>&nbsp;+91-9136149309</a>
+</div>
+
+<!-- ── HERO ── -->
+<section id="home" class="hero" aria-label="Hero">
+  <div class="hero-bg-img" aria-hidden="true"></div>
+  <div class="hero-noise" aria-hidden="true"></div>
+
+  <div class="hero-badge">
+    <span class="dot" aria-hidden="true"></span>
+    <span id="openStatus">Your Trusted Tech Partner · Mumbai</span>
+  </div>
+
+  <h1>Expert <em>Tech Solutions</em><br>For Your Business</h1>
+
+  <div class="typewriter-wrap" aria-live="polite" aria-atomic="true">
+    <span class="typewriter">
+      <span id="typewriterText" class="typewriter-text"></span>
+    </span>
+  </div>
+
+  <p class="hero-sub">Industrial computing, comprehensive IT services, and expert technical support — all under one roof.</p>
+
+  <div class="hero-btns">
+    <a href="#services" class="btn-primary">Explore Services <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    <a href="#contact" class="btn-outline">Get Free Quote</a>
+  </div>
+
+  <div class="hero-cards" role="list">
+    <div class="hero-stat" role="listitem"><div class="num" data-target="500" data-suffix="+">0</div><div class="label">Happy Clients</div></div>
+    <div class="hero-stat" role="listitem"><div class="num" data-target="13" data-suffix="+">0</div><div class="label">Years Experience</div></div>
+    <div class="hero-stat" role="listitem"><div class="num" data-target="50" data-suffix="+">0</div><div class="label">Brands Supported</div></div>
+    <div class="hero-stat" role="listitem"><div class="num">24<span>/7</span></div><div class="label">Tech Support</div></div>
+  </div>
+</section>
+
+<!-- ── BRAND LOGOS STRIP ── -->
+<div class="brands-strip" aria-label="Brands we service">
+  <p class="brands-label">Brands We Service</p>
+  <div class="brands-track-wrap">
+    <div class="brands-track" aria-hidden="true">
+      <!-- First set -->
+      <div class="brand-item"><span>Dell</span></div>
+      <div class="brand-item"><span>HP</span></div>
+      <div class="brand-item"><span>Lenovo</span></div>
+      <div class="brand-item"><span>Asus</span></div>
+      <div class="brand-item"><span>Acer</span></div>
+      <div class="brand-item"><span>Samsung</span></div>
+      <div class="brand-item"><span>Canon</span></div>
+      <div class="brand-item"><span>Epson</span></div>
+      <div class="brand-item"><span>Hikvision</span></div>
+      <div class="brand-item"><span>Dahua</span></div>
+      <div class="brand-item"><span>Zebra</span></div>
+      <div class="brand-item"><span>Honeywell</span></div>
+      <div class="brand-item"><span>Posiflex</span></div>
+      <div class="brand-item"><span>TVS</span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="brand-item"><span>Dell</span></div>
+      <div class="brand-item"><span>HP</span></div>
+      <div class="brand-item"><span>Lenovo</span></div>
+      <div class="brand-item"><span>Asus</span></div>
+      <div class="brand-item"><span>Acer</span></div>
+      <div class="brand-item"><span>Samsung</span></div>
+      <div class="brand-item"><span>Canon</span></div>
+      <div class="brand-item"><span>Epson</span></div>
+      <div class="brand-item"><span>Hikvision</span></div>
+      <div class="brand-item"><span>Dahua</span></div>
+      <div class="brand-item"><span>Zebra</span></div>
+      <div class="brand-item"><span>Honeywell</span></div>
+      <div class="brand-item"><span>Posiflex</span></div>
+      <div class="brand-item"><span>TVS</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── SERVICES ── -->
+<section id="services" class="services-section">
+  <div class="section-inner">
+    <div class="sh-img-wrap sh-grey" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1400&q=80')">
+      <div class="section-header center">
+        <div class="section-eyebrow reveal">What We Offer</div>
+        <h2 class="section-title reveal reveal-d1">Our Services</h2>
+        <p class="section-sub reveal reveal-d2">Comprehensive technology solutions tailored to meet every business need.</p>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card reveal reveal-d1" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80')">
+        <div class="svc-icon"><i class="fas fa-industry" aria-hidden="true"></i></div>
+        <div class="svc-eyebrow">Industrial Solutions</div>
+        <h3 class="svc-title">Industrial &amp; Commercial Computing</h3>
+        <p class="svc-desc">Complete industrial and commercial computer solutions — high-performance systems, terminals, and specialized equipment.</p>
+        <ul class="svc-list" role="list">
+          <li>Industrial Computers</li>
+          <li>Commercial Systems</li>
+          <li>Printers &amp; Scanners</li>
+          <li>CCTV Systems</li>
+        </ul>
+        <a href="#contact" class="svc-link">Learn more <i class="fas fa-arrow-right" aria-hidden="true" style="font-size:12px"></i></a>
+      </div>
+      <div class="svc-card featured reveal reveal-d2" style="background-image:url('https://images.unsplash.com/photo-1555617778-02518510b9b5?w=800&q=80')">
+        <div class="svc-card-badge">Most Popular</div>
+        <div class="svc-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+        <div class="svc-eyebrow">Total Service</div>
+        <h3 class="svc-title">Complete Service &amp; Support</h3>
+        <p class="svc-desc">Total service and support for all computer products across all major brands. Hardware to software — we handle it all.</p>
+        <ul class="svc-list" role="list">
+          <li>Multi-Brand Support</li>
+          <li>Hardware Repairs</li>
+          <li>Software Installation</li>
+          <li>Maintenance Contracts</li>
+        </ul>
+        <a href="#contact" class="svc-link" style="color:#fff">Learn more <i class="fas fa-arrow-right" aria-hidden="true" style="font-size:12px"></i></a>
+      </div>
+      <div class="svc-card reveal reveal-d3" style="background-image:url('https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80')">
+        <div class="svc-icon"><i class="fas fa-wifi" aria-hidden="true"></i></div>
+        <div class="svc-eyebrow">Tech Support</div>
+        <h3 class="svc-title">Online &amp; Offline Technical Support</h3>
+        <p class="svc-desc">Full-spectrum support available both online and offline. Remote assistance, on-site visits, and 24/7 emergency help.</p>
+        <ul class="svc-list" role="list">
+          <li>Remote Assistance</li>
+          <li>On-Site Support</li>
+          <li>Network Setup</li>
+          <li>Emergency Services</li>
+        </ul>
+        <a href="#contact" class="svc-link">Learn more <i class="fas fa-arrow-right" aria-hidden="true" style="font-size:12px"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<section class="stats-section" aria-label="Company statistics">
+  <div class="stats-grid">
+    <div class="stat-item reveal reveal-d1"><div class="stat-num" data-target="500" data-suffix="+">0</div><div class="stat-label">Happy Clients</div></div>
+    <div class="stat-item reveal reveal-d2"><div class="stat-num" data-target="13" data-suffix="+">0</div><div class="stat-label">Years Experience</div></div>
+    <div class="stat-item reveal reveal-d3"><div class="stat-num" data-target="50" data-suffix="+">0</div><div class="stat-label">Brands Supported</div></div>
+    <div class="stat-item reveal reveal-d4"><div class="stat-num">24<span>/7</span></div><div class="stat-label">Tech Support</div></div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials" class="testimonials-section">
+  <div class="section-inner">
+    <div class="sh-img-wrap" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400&q=80')">
+      <div class="section-header center">
+        <div class="section-eyebrow reveal">Customer Reviews</div>
+        <h2 class="section-title reveal reveal-d1">What Our Clients Say</h2>
+        <p class="section-sub reveal reveal-d2">Real experiences from real businesses in Mumbai.</p>
+      </div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal reveal-d1">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testi-quote">My office computers were crashing daily. TechNova fixed everything same day, installed proper antivirus, and even set up a backup system. Absolutely professional and fast!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <div class="testi-name">Ramesh Joshi</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--blue);font-size:10px;margin-right:3px"></i>Malad West, Mumbai</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card featured-t reveal reveal-d2">
+        <div class="testi-badge">⭐ Top Review</div>
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testi-quote">We needed CCTV installed across our factory floor. TechNova handled the whole project — cameras, wiring, NVR setup, remote access — everything perfectly. Best investment we made!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <div class="testi-name">Santosh Pawar</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:#636366;font-size:10px;margin-right:3px"></i>Goregaon East, Mumbai</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-d3">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testi-quote">Our barcode printer stopped working right before a big dispatch. Called TechNova at 8pm — they fixed it remotely within 30 minutes. Truly 24/7 support. Highly recommend!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">P</div>
+          <div>
+            <div class="testi-name">Priya Sharma</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--blue);font-size:10px;margin-right:3px"></i>Andheri East, Mumbai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-inner">
+    <div class="sh-img-wrap" style="background-image:url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=1400&q=80')">
+      <div class="section-header center">
+        <div class="section-eyebrow reveal">About TechNova Core</div>
+        <h2 class="section-title reveal reveal-d1">Your One-Stop<br>Tech Solution Partner</h2>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-visual-main">
+          <div class="about-avatar"><i class="fas fa-user-tie" aria-hidden="true"></i></div>
+          <h3>Solo Expert</h3>
+          <p>Dedicated Professional</p>
+        </div>
+        <div class="about-badge-1">
+          <div class="badge-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+          <div class="badge-text"><div class="bnum">Certified</div><div class="blabel">Professional</div></div>
+        </div>
+        <div class="about-badge-2">
+          <div class="badge-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+          <div class="badge-text"><div class="bnum">13+ Yrs</div><div class="blabel">Experience</div></div>
+        </div>
+      </div>
+      <div class="about-content reveal reveal-d2">
+        <p>At TechNova Core Solution, we believe in providing personalized, professional technology services that larger companies can't match. As a solo practitioner, I bring dedicated attention to every client.</p>
+        <p>Whether you need industrial computing solutions, comprehensive IT support, or round-the-clock technical assistance — I'm committed to keeping your business running smoothly.</p>
+        <div class="about-tags">
+          <div class="about-tag"><i class="fas fa-user-check" aria-hidden="true"></i> Personalized Service</div>
+          <div class="about-tag"><i class="fas fa-bolt" aria-hidden="true"></i> Quick Response</div>
+          <div class="about-tag"><i class="fas fa-layer-group" aria-hidden="true"></i> All Brands Covered</div>
+          <div class="about-tag"><i class="fas fa-tag" aria-hidden="true"></i> Affordable Pricing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ── -->
+<section id="why-us" class="whyus-section">
+  <div class="section-inner">
+    <div class="sh-img-wrap sh-grey" style="background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1400&q=80')">
+      <div class="section-header center">
+        <div class="section-eyebrow reveal">Our Advantages</div>
+        <h2 class="section-title reveal reveal-d1">Why Choose Us</h2>
+      </div>
+    </div>
+    <div class="whyus-grid">
+      <div class="whyus-card reveal reveal-d1"><div class="whyus-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div><h3>Fast Response</h3><p>Quick turnaround times to minimize your downtime and keep your business running smoothly.</p></div>
+      <div class="whyus-card reveal reveal-d2"><div class="whyus-icon"><i class="fas fa-hand-holding-usd" aria-hidden="true"></i></div><h3>Competitive Pricing</h3><p>Quality services at prices that won't break your budget. No hidden costs, ever.</p></div>
+      <div class="whyus-card reveal reveal-d3"><div class="whyus-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div><h3>Certified Expertise</h3><p>Professional certified skills to handle all brands and complex technical issues with confidence.</p></div>
+      <div class="whyus-card reveal reveal-d4"><div class="whyus-icon"><i class="fas fa-headset" aria-hidden="true"></i></div><h3>24/7 Support</h3><p>Round-the-clock technical support available for your critical business needs anytime.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq" class="faq-section">
+  <div class="section-inner">
+    <div class="sh-img-wrap" style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1400&q=80')">
+      <div class="section-header center">
+        <div class="section-eyebrow reveal">Common Questions</div>
+        <h2 class="section-title reveal reveal-d1">Frequently Asked</h2>
+        <p class="section-sub reveal reveal-d2">Quick answers to questions we get all the time.</p>
+      </div>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Do you provide on-site service in Mumbai?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Yes! We provide on-site service across Mumbai — Goregaon, Malad, Andheri, Borivali, Kandivali and nearby areas. We also offer remote support for issues that can be resolved online.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>What brands of computers do you repair?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>We service all major brands — Dell, HP, Lenovo, Asus, Acer, Samsung, and more. We also handle industrial computers, POS terminals, Zebra/Honeywell barcode printers, and Canon/Epson printers.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>How quickly can you respond to an emergency call?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>For emergency issues, we typically respond within 1–2 hours. Remote support can often begin within minutes of your call. Sunday and after-hours emergency support is available for critical business systems.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Do you offer Annual Maintenance Contracts (AMC)?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Yes! We offer flexible AMC packages for businesses of all sizes. AMC covers regular maintenance visits, priority support, discounted repair rates, and free remote assistance. Contact us for a custom quote.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Can you install and configure CCTV systems for my office?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Absolutely. We supply and install Hikvision, Dahua and other CCTV systems including IP cameras, DVR/NVR setup, cabling, and remote viewing configuration via your phone or computer.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>What payment methods do you accept?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>We accept cash, UPI (GPay, PhonePe, Paytm), NEFT/IMPS, and bank transfers. Invoices with GST are provided for all business transactions.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <h2>Ready to Solve Your Tech Problems?</h2>
+    <p>Let's discuss how we can help your business with professional technology solutions. Free consultation, no commitment.</p>
+    <div class="cta-btns">
+      <a href="tel:+919136149309" class="btn-primary"><i class="fas fa-phone" aria-hidden="true"></i> Call: +91-9136149309</a>
+      <a href="#contact" class="btn-outline"><i class="fas fa-envelope" aria-hidden="true"></i> Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── YOUTUBE ── -->
+<section class="yt-section">
+  <div class="section-inner">
+    <div class="sh-img-wrap sh-grey" style="background-image:url('https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=1400&q=80')">
+      <div class="section-header center" style="margin-bottom:0">
+        <div class="section-eyebrow reveal">Watch &amp; Learn</div>
+        <h2 class="section-title reveal reveal-d1">Our Latest Videos</h2>
+        <p class="section-sub reveal reveal-d2">Watch our latest work, demos &amp; tech solutions in action.</p>
+      </div>
+    </div>
+    <div class="yt-embed reveal">
+      <iframe
+        src="https://www.youtube.com/embed/videoseries?list=UUtbojRlBoBkDBRL9mQxe60w&rel=0"
+        title="TechNova Core Solutions YouTube Channel"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="sh-img-wrap" style="background-image:url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1400&q=80')">
+      <div class="section-header">
+        <div class="section-eyebrow reveal">Contact Us</div>
+        <h2 class="section-title reveal reveal-d1">Get In Touch</h2>
+        <p class="section-sub reveal reveal-d2">We're here to help. Reach out anytime.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-card">
+          <div class="ci-row">
+            <div class="ci-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+            <div><div class="ci-label">Phone</div><div class="ci-value"><a href="tel:+919136149309">+91-9136149309</a></div></div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:technovacoresolutions@gmail.com">technovacoresolutions@gmail.com</a></div></div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+            <div><div class="ci-label">Address</div><div class="ci-value">Shree Om Swami Samarth S.R.A. CHS LTD,<br>Ladkya Compound, Gen A.K. Vaidya Marg,<br>Gokuldham, Goregaon (East),<br>Mumbai – 400063</div></div>
+          </div>
+        </div>
+        <div class="hours-card" style="margin-top:14px">
+          <h4><i class="fas fa-clock" aria-hidden="true"></i> Working Hours</h4>
+          <div class="hours-row"><span class="day">Monday – Saturday</span><span class="time">9:00 AM – 8:00 PM</span></div>
+          <div class="hours-row"><span class="day">Sunday</span><span class="time blue">Emergency Only</span></div>
+          <div class="hours-note"><i class="fas fa-info-circle" aria-hidden="true" style="color:var(--blue);margin-right:6px"></i>24/7 emergency support available for critical issues.</div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal reveal-d2">
+        <h3>Send a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group floating" id="fg-name">
+              <input id="fieldName" type="text" required placeholder=" " autocomplete="name" maxlength="80"/>
+              <label for="fieldName">Your Name</label>
+              <span class="field-error" id="err-name"><i class="fas fa-exclamation-circle"></i> Please enter your name</span>
+            </div>
+            <div class="form-group floating" id="fg-phone">
+              <input id="fieldPhone" type="tel" required placeholder=" " autocomplete="tel" maxlength="15" pattern="[0-9+\-\s]{7,15}"/>
+              <label for="fieldPhone">Phone Number</label>
+              <span class="field-error" id="err-phone"><i class="fas fa-exclamation-circle"></i> Enter a valid phone number</span>
+            </div>
+          </div>
+          <div class="form-group floating" id="fg-email">
+            <input id="fieldEmail" type="email" required placeholder=" " autocomplete="email" maxlength="100"/>
+            <label for="fieldEmail">Email Address</label>
+            <span class="field-error" id="err-email"><i class="fas fa-exclamation-circle"></i> Enter a valid email address</span>
+          </div>
+          <div class="form-group" id="fg-service" style="margin-bottom:20px">
+            <span class="svc-label">Service Required</span>
+            <input type="hidden" id="fieldService" required/>
+            <div class="svc-options" id="svcOptions" role="group" aria-label="Select a service">
+              <button type="button" class="svc-opt" data-value="Industrial/Commercial Computing" aria-pressed="false">
+                <div class="svc-opt-icon"><i class="fas fa-industry" aria-hidden="true"></i></div>
+                <span class="svc-opt-text">Industrial Computing</span>
+                <div class="svc-opt-check" aria-hidden="true"><i class="fas fa-check"></i></div>
+              </button>
+              <button type="button" class="svc-opt" data-value="Service &amp; Support" aria-pressed="false">
+                <div class="svc-opt-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+                <span class="svc-opt-text">Service &amp; Support</span>
+                <div class="svc-opt-check" aria-hidden="true"><i class="fas fa-check"></i></div>
+              </button>
+              <button type="button" class="svc-opt" data-value="Technical Support" aria-pressed="false">
+                <div class="svc-opt-icon"><i class="fas fa-wifi" aria-hidden="true"></i></div>
+                <span class="svc-opt-text">Technical Support</span>
+                <div class="svc-opt-check" aria-hidden="true"><i class="fas fa-check"></i></div>
+              </button>
+              <button type="button" class="svc-opt" data-value="Other" aria-pressed="false">
+                <div class="svc-opt-icon"><i class="fas fa-question-circle" aria-hidden="true"></i></div>
+                <span class="svc-opt-text">Other</span>
+                <div class="svc-opt-check" aria-hidden="true"><i class="fas fa-check"></i></div>
+              </button>
+            </div>
+            <span class="field-error" id="err-service" style="margin-top:8px"><i class="fas fa-exclamation-circle"></i> Please select a service</span>
+          </div>
+          <div class="form-group floating" id="fg-message">
+            <textarea id="fieldMessage" required placeholder=" " maxlength="1000"></textarea>
+            <label for="fieldMessage">Your Message</label>
+            <span class="field-error" id="err-message"><i class="fas fa-exclamation-circle"></i> Please enter your message</span>
+          </div>
+          <button type="submit" class="btn-submit" id="btnSubmit">
+            <span class="btn-default" style="display:flex;align-items:center;gap:8px">Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i></span>
+            <span class="btn-loading" style="display:flex;align-items:center;gap:8px" aria-live="polite"><span class="spinner"></span> Sending…</span>
+            <span class="btn-success" style="display:flex;align-items:center;gap:8px" aria-live="polite"><i class="fas fa-check-circle" aria-hidden="true"></i> Message Sent!</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="map-wrap reveal" style="margin-top:60px">
+      <iframe
+        src="https://www.google.com/maps?q=Shree+Om+Swami+Samarth+SRA+CHS+LTD+Ladkya+Compound+Gen+AK+Vaidya+Marg+Ryan+International+School+Aarey+Bhaskar+Road+Gokuldham+Goregaon+East+Mumbai+400063&output=embed"
+        title="TechNova Core Solutions Location"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      
+      <div class="footer-brand">
+        <div class="logo-row">
+          <img src="https://i.postimg.cc/hGdsdd9V/2026.png" 
+               alt="TechNova Core Solutions Logo" 
+               style="height:36px;width:auto;object-fit:contain;">
+          <span class="logo-name">TechNova Core Solutions</span>
+        </div>
+
+        <p>Your trusted partner for industrial computing, comprehensive IT services, and expert technical support. Powering businesses with reliable technology.</p>
+
+        <div class="footer-socials">
+          <a href="https://instagram.com/tech_nova_core" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram" style="color:#E1306C"></i>
+          </a>
+          <a href="https://wa.me/919136149309" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp" style="color:#25D366"></i>
+          </a>
+          <a href="https://www.youtube.com/@TechNovaCoreSolutions" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fab fa-youtube" style="color:#FF4444"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul role="list">
+          <li><a href="#services">Industrial Computing</a></li>
+          <li><a href="#services">CCTV Systems</a></li>
+          <li><a href="#services">Printer Services</a></li>
+          <li><a href="#services">Technical Support</a></li>
+          <li><a href="#services">AMC Contracts</a></li>
+          <li><a href="#services">Network Setup</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> TechNova Core Solutions. All rights reserved.</p>
+      <p style="color:#48484A;font-size:13px">Mumbai, Maharashtra, India</p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ── ENHANCED WHATSAPP FAB ── -->
+<div class="wa-fab-wrap">
+  <div class="wa-tooltip">Chat on WhatsApp</div>
+  <a href="https://wa.me/919136149309" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+</div>
+
+<!-- ── SOCIAL PROOF TOAST ── -->
+<div class="sp-toast" id="spToast" role="status" aria-live="polite" aria-atomic="true">
+  <div class="sp-avatar" id="spAvatar"></div>
+  <div>
+    <span class="sp-text" id="spText"></span>
+    <span class="sp-time" id="spTime"></span>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  /* ── HELPERS ── */
+  function sanitize(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+  function isEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function isPhone(v) { return /^[0-9+\-\s]{7,15}$/.test(v.trim()); }
+
+  /* ── NAVBAR ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('dark-nav', window.scrollY > 60);
+  }, { passive: true });
+
+  /* ── MOBILE MENU ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.mobile-nav a').forEach(a =>
+    a.addEventListener('click', () => { mobileNav.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); })
+  );
+
+  /* ── SMOOTH SCROLL ── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  /* ── OPEN STATUS ── */
+  function updateOpenStatus() {
+    const now = new Date();
+    const day  = now.getDay(); // 0=Sun
+    const hour = now.getHours();
+    const el   = document.getElementById('openStatus');
+    if (!el) return;
+    const isOpen = (day >= 1 && day <= 6 && hour >= 9 && hour < 20);
+    if (isOpen) {
+      el.innerHTML = '<span style="color:#30D158;font-weight:500">● Open Now</span> · Responding Quickly';
+    } else if (day === 0) {
+      el.innerHTML = '<span style="color:#FF9F0A;font-weight:500">● Emergency Only</span> · Sunday';
+    } else {
+      el.innerHTML = '<span style="color:#86868B">● Closed</span> · Opens Mon–Sat 9 AM';
+    }
+  }
+  updateOpenStatus();
+
+  /* ── TYPEWRITER ── */
+  const words = ['Computer Repairs', 'CCTV Installation', 'Printer Servicing', 'Network Setup', '24/7 Tech Support', 'Industrial Computing', 'AMC Contracts'];
+  let wi = 0, ci = 0, deleting = false;
+  const twEl = document.getElementById('typewriterText');
+  function typeLoop() {
+    if (!twEl) return;
+    const word = words[wi];
+    if (!deleting) {
+      twEl.textContent = word.slice(0, ++ci);
+      if (ci === word.length) { deleting = true; setTimeout(typeLoop, 1800); return; }
+      setTimeout(typeLoop, 80);
+    } else {
+      twEl.textContent = word.slice(0, --ci);
+      if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; setTimeout(typeLoop, 400); return; }
+      setTimeout(typeLoop, 45);
+    }
+  }
+  setTimeout(typeLoop, 1200);
+
+  /* ── SCROLL REVEAL ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const revObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => revObs.observe(el));
+
+  /* ── ANIMATED STAT COUNTERS ── */
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1800;
+    const step = 16;
+    const increment = target / (duration / step);
+    let current = 0;
+    const timer = setInterval(() => {
+      current = Math.min(current + increment, target);
+      el.textContent = Math.floor(current) + suffix;
+      if (current >= target) clearInterval(timer);
+    }, step);
+  }
+  const counterObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting && e.target.dataset.target) {
+        animateCounter(e.target);
+        counterObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
+
+  /* ── FORM STAGGER REVEAL ── */
+  const formWrap = document.querySelector('.contact-form-wrap');
+  if (formWrap) {
+    const fObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.form-group').forEach((g, i) => {
+            setTimeout(() => g.classList.add('form-visible'), i * 90);
+          });
+          fObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fObs.observe(formWrap);
+  }
+
+  /* ── REAL-TIME ERROR CLEARING ── */
+  ['fieldName','fieldPhone','fieldEmail','fieldMessage'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', function() {
+      const fg = this.closest('.form-group');
+      if (fg && fg.classList.contains('has-error')) {
+        fg.classList.remove('has-error');
+        const err = fg.querySelector('.field-error');
+        if (err) err.classList.remove('show');
+      }
+    });
+  });
+
+  /* ── SERVICE OPTION CARDS ── */
+  const svcOpts = document.querySelectorAll('.svc-opt');
+  const fieldService = document.getElementById('fieldService');
+  svcOpts.forEach(opt => {
+    opt.addEventListener('click', function(e) {
+      const ripple = document.createElement('span');
+      ripple.classList.add('ripple');
+      const rect = this.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX - rect.left - size / 2}px;top:${e.clientY - rect.top - size / 2}px`;
+      this.appendChild(ripple);
+      ripple.addEventListener('animationend', () => ripple.remove());
+      const was = this.classList.contains('selected');
+      svcOpts.forEach(o => { o.classList.remove('selected'); o.setAttribute('aria-pressed','false'); });
+      if (!was) {
+        this.classList.add('selected');
+        this.setAttribute('aria-pressed','true');
+        fieldService.value = this.dataset.value;
+      } else {
+        fieldService.value = '';
+      }
+    });
+    opt.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); opt.click(); } });
+  });
+
+  /* ── FAQ ACCORDION ── */
+  document.querySelectorAll('.faq-q').forEach(q => {
+    function toggle() {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+      if (!isOpen) { item.classList.add('open'); q.setAttribute('aria-expanded','true'); }
+    }
+    q.addEventListener('click', toggle);
+    q.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+  });
+
+  /* ── CONTACT FORM SUBMIT ── */
+  const btn = document.getElementById('btnSubmit');
+
+  function clearErrors() {
+    document.querySelectorAll('.field-error').forEach(e => e.classList.remove('show'));
+    document.querySelectorAll('.form-group.has-error').forEach(e => e.classList.remove('has-error'));
+  }
+  function showError(fgId, errId) {
+    const fg = document.getElementById(fgId);
+    const err = document.getElementById(errId);
+    if (fg) { fg.classList.add('has-error'); fg.classList.add('shake'); fg.addEventListener('animationend', () => fg.classList.remove('shake'), { once: true }); }
+    if (err) err.classList.add('show');
+  }
+
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    clearErrors();
+    const name    = sanitize(document.getElementById('fieldName').value.trim());
+    const phone   = sanitize(document.getElementById('fieldPhone').value.trim());
+    const email   = sanitize(document.getElementById('fieldEmail').value.trim());
+    const service = fieldService.value;
+    const message = sanitize(document.getElementById('fieldMessage').value.trim());
+
+    let ok = true;
+    if (!name)          { showError('fg-name', 'err-name');    ok = false; }
+    if (!isPhone(phone)){ showError('fg-phone', 'err-phone');  ok = false; }
+    if (!isEmail(email)){ showError('fg-email', 'err-email');  ok = false; }
+    if (!message)       { showError('fg-message', 'err-message'); ok = false; }
+
+    if (!service) {
+      const sg = document.getElementById('fg-service');
+      const errSvc = document.getElementById('err-service');
+      if (sg) { sg.classList.add('shake'); sg.addEventListener('animationend', () => sg.classList.remove('shake'), { once: true }); }
+      if (errSvc) errSvc.classList.add('show');
+      svcOpts.forEach((o, i) => { setTimeout(() => { o.style.transform = 'scale(1.04)'; setTimeout(() => o.style.transform = '', 150); }, i * 40); });
+      ok = false;
+    }
+    if (!ok) return;
+
+    btn.classList.add('loading');
+    btn.disabled = true;
+    await new Promise(r => setTimeout(r, 900));
+
+    const raw =
+      '*New Inquiry — TechNova Core Solutions*\n\n' +
+      '*Name:* '    + name    + '\n' +
+      '*Phone:* '   + phone   + '\n' +
+      '*Email:* '   + email   + '\n' +
+      '*Service:* ' + service + '\n' +
+      '*Message:* ' + message;
+    window.open('https://wa.me/919136149309?text=' + encodeURIComponent(raw), '_blank', 'noopener,noreferrer');
+
+    btn.classList.remove('loading');
+    btn.classList.add('success');
+    await new Promise(r => setTimeout(r, 2400));
+    btn.classList.remove('success');
+    btn.disabled = false;
+    this.reset();
+    clearErrors();
+    svcOpts.forEach(o => { o.classList.remove('selected'); o.setAttribute('aria-pressed','false'); });
+    fieldService.value = '';
+  });
+
+  /* ── SOCIAL PROOF TOASTS ── */
+  const proofs = [
+    { init:'R', name:'Ramesh from Andheri', action:'enquired about laptop repair', mins:3 },
+    { init:'P', name:'Priya from Malad',    action:'booked a CCTV installation', mins:7 },
+    { init:'S', name:'Suresh from Borivali',action:'requested an AMC quote', mins:12 },
+    { init:'N', name:'Neha from Kandivali', action:'enquired about network setup', mins:18 },
+    { init:'V', name:'Vijay from Goregaon', action:'asked about printer repair', mins:25 },
+    { init:'A', name:'Anil from Jogeshwari',action:'enquired about CCTV cameras', mins:31 },
+  ];
+  let pi = 0;
+  function showToast() {
+    const p = proofs[pi % proofs.length]; pi++;
+    const toast = document.getElementById('spToast');
+    document.getElementById('spAvatar').textContent  = p.init;
+    document.getElementById('spText').innerHTML = '<strong>' + p.name + '</strong> ' + p.action;
+    document.getElementById('spTime').textContent = p.mins + ' min ago';
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 4000);
+  }
+  setTimeout(() => { showToast(); setInterval(showToast, 18000); }, 5000);
+
+  /* ── YEAR ── */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+})();
+</script>
+</body>
+</html>
