@@ -353,6 +353,7 @@
     .footer-brand .logo-icon i{font-size:15px;color:var(--text-black)}
     .footer-brand .logo-name{font-size:16px;font-weight:700;color:#F5F5F7}
     .footer-brand p{font-size:14px;color:#636366;line-height:1.7;max-width:320px;margin-bottom:24px}
+    .socials-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#86868B;margin-bottom:10px!important;line-height:1}
     .footer-socials{display:flex;gap:10px}
     .footer-socials a{width:38px;height:38px;background:rgba(255,255,255,0.06);border-radius:10px;display:flex;align-items:center;justify-content:center;transition:background 0.2s;text-decoration:none}
     .footer-socials a:hover{background:rgba(255,255,255,0.12)}
@@ -375,8 +376,7 @@
     .whatsapp-fab i{font-size:26px;color:#fff}
 
     /* ── SOCIAL PROOF TOAST ── */
-    .sp-toast{position:fixed;bottom:100px;left:24px;z-index:190;background:var(--white);border:1px solid var(--border-soft);border-radius:var(--radius-md);padding:14px 18px;box-shadow:0 12px 40px rgba(0,0,0,0.13);display:flex;align-items:center;gap:12px;max-width:300px;transform:translateX(-120%);transition:transform 0.45s cubic-bezier(0.34,1.56,0.64,1);pointer-events:none}
-    .sp-toast.show{transform:translateX(0)}
+
     .sp-avatar{width:36px;height:36px;border-radius:50%;background:var(--bg-grey);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;font-weight:700;color:var(--text-mid)}
     .sp-text{font-size:13px;color:var(--text-mid);line-height:1.45}
     .sp-text strong{color:var(--text-black);display:block}
@@ -424,7 +424,7 @@
       .about-badge-1{left:0;bottom:-20px}
       .about-badge-2{right:0;top:-20px}
       .testi-grid{grid-template-columns:1fr}
-      .sp-toast{left:12px;right:12px;max-width:unset}
+
     }
   </style>
 </head>
@@ -498,7 +498,7 @@
     <div class="hero-stat" role="listitem"><div class="num" data-target="500" data-suffix="+">0</div><div class="label">Happy Clients</div></div>
     <div class="hero-stat" role="listitem"><div class="num" data-target="13" data-suffix="+">0</div><div class="label">Years Experience</div></div>
     <div class="hero-stat" role="listitem"><div class="num" data-target="50" data-suffix="+">0</div><div class="label">Brands Supported</div></div>
-    <div class="hero-stat" role="listitem"><div class="num">24<span>/7</span></div><div class="label">Tech Support</div></div>
+    <div class="hero-stat" role="listitem"><div class="num">60<span> Min</span></div><div class="label">Response Time</div></div>
   </div>
 </section>
 
@@ -602,7 +602,7 @@
     <div class="stat-item reveal reveal-d1"><div class="stat-num" data-target="500" data-suffix="+">0</div><div class="stat-label">Happy Clients</div></div>
     <div class="stat-item reveal reveal-d2"><div class="stat-num" data-target="13" data-suffix="+">0</div><div class="stat-label">Years Experience</div></div>
     <div class="stat-item reveal reveal-d3"><div class="stat-num" data-target="50" data-suffix="+">0</div><div class="stat-label">Brands Supported</div></div>
-    <div class="stat-item reveal reveal-d4"><div class="stat-num">24<span>/7</span></div><div class="stat-label">Tech Support</div></div>
+    <div class="stat-item reveal reveal-d4"><div class="stat-num">60<span> Min</span></div><div class="stat-label">Response Time</div></div>
   </div>
 </section>
 
@@ -831,9 +831,10 @@
         </div>
         <div class="hours-card" style="margin-top:14px">
           <h4><i class="fas fa-clock" aria-hidden="true"></i> Working Hours</h4>
-          <div class="hours-row"><span class="day">Monday – Saturday</span><span class="time">9:00 AM – 8:00 PM</span></div>
-          <div class="hours-row"><span class="day">Sunday</span><span class="time blue">Emergency Only</span></div>
-          <div class="hours-note"><i class="fas fa-info-circle" aria-hidden="true" style="color:var(--blue);margin-right:6px"></i>24/7 emergency support available for critical issues.</div>
+          <div class="hours-row"><span class="day">Monday – Saturday</span><span class="time">6:30 PM – 10:30 PM</span></div>
+          <div class="hours-row"><span class="day">Sunday</span><span class="time blue">10:00 AM – 6:00 PM</span></div>
+          <div class="hours-row"><span class="day">Emergency Support</span><span class="time" style="color:var(--green)">Available on call</span></div>
+          <div class="hours-note"><i class="fas fa-info-circle" aria-hidden="true" style="color:var(--blue);margin-right:6px"></i>We may not be able to respond during regular office hours due to ongoing service work. Please leave a message — we will get back to you as soon as possible.</div>
         </div>
       </div>
 
@@ -922,6 +923,7 @@
 
         <p>Your trusted partner for industrial computing, comprehensive IT services, and expert technical support. Powering businesses with reliable technology.</p>
 
+        <p class="socials-label">Follow us on Socials</p>
         <div class="footer-socials">
           <a href="https://instagram.com/tech_nova_core" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <i class="fab fa-instagram" style="color:#E1306C"></i>
@@ -978,13 +980,7 @@
 </div>
 
 <!-- ── SOCIAL PROOF TOAST ── -->
-<div class="sp-toast" id="spToast" role="status" aria-live="polite" aria-atomic="true">
-  <div class="sp-avatar" id="spAvatar"></div>
-  <div>
-    <span class="sp-text" id="spText"></span>
-    <span class="sp-time" id="spTime"></span>
-  </div>
-</div>
+
 
 <script>
 (function() {
@@ -1221,27 +1217,6 @@
     svcOpts.forEach(o => { o.classList.remove('selected'); o.setAttribute('aria-pressed','false'); });
     fieldService.value = '';
   });
-
-  /* ── SOCIAL PROOF TOASTS ── */
-  const proofs = [
-    { init:'R', name:'Ramesh from Andheri', action:'enquired about laptop repair', mins:3 },
-    { init:'P', name:'Priya from Malad',    action:'booked a CCTV installation', mins:7 },
-    { init:'S', name:'Suresh from Borivali',action:'requested an AMC quote', mins:12 },
-    { init:'N', name:'Neha from Kandivali', action:'enquired about network setup', mins:18 },
-    { init:'V', name:'Vijay from Goregaon', action:'asked about printer repair', mins:25 },
-    { init:'A', name:'Anil from Jogeshwari',action:'enquired about CCTV cameras', mins:31 },
-  ];
-  let pi = 0;
-  function showToast() {
-    const p = proofs[pi % proofs.length]; pi++;
-    const toast = document.getElementById('spToast');
-    document.getElementById('spAvatar').textContent  = p.init;
-    document.getElementById('spText').innerHTML = '<strong>' + p.name + '</strong> ' + p.action;
-    document.getElementById('spTime').textContent = p.mins + ' min ago';
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 4000);
-  }
-  setTimeout(() => { showToast(); setInterval(showToast, 18000); }, 5000);
 
   /* ── YEAR ── */
   document.getElementById('year').textContent = new Date().getFullYear();
